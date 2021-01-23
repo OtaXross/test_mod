@@ -1,0 +1,44 @@
+{
+    "parent": "minecraft:recipes/root",
+    "criteria": {　←　進捗達成条件。"has_ore"はただの変数名。
+        "has_ore": {　
+            "trigger": "minecraft:inventory_changed",　←インベントリに何らかの変更があったことを検知する。この場合は、鉱石(ame_block)の入手を検知。
+            "conditions": {
+                "items": [
+                    {
+                        "item": "amemod:ame_block"
+                    }
+                ]
+            }
+        },
+        "has_recipe": {　
+            "trigger": "minecraft:recipe_unlocked",　←レシピの使用を検知。この場合は、かまど。
+            "conditions": {
+                "recipe": "amemod:ame_ingot"
+            }
+        },
+        "has_recipe_blasting": {　
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "amemod:ame_ingot_blasting"
+            }
+        }
+    },
+    "rewards": {　進捗達成の報酬。この場合は、レシピ本にレシピを登録する。他にも、アイテムや経験値の取得、コマンドの実行ができるよ。
+        "recipes": [
+            "amemod:ame_ingot",
+            "amemod:ame_ingot_blasting"
+        ]
+    },
+    "requirements": [　←　上の条件のうち、どこまで満たしたらいいのかを指定する。こうやって指定すれば「どれか１つでも満たしていればいい」。何も指定してないと、「全部達成しないとだめ」。
+        [
+            "has_ore",
+            "has_recipe",
+            "has_recipe_blasting"
+        ]
+    ]
+    ↑このrequirements は　
+        ["A"],["B"] → "A" AND "B"
+        ["A", "B"] → "A" OR "B"
+    ということ。 
+}

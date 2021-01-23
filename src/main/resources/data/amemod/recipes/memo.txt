@@ -1,0 +1,19 @@
+{
+    "type": "crafting_shaped",
+    "pattern": [//レシピの形。この形でクラフト台に載せる
+        "A",
+        "A",
+        "S"
+    ],
+    "key": {// 上の文字にアイテムを割り当てる。文字はこちらで勝手に決められる。
+        "A": {
+            "item": "amemod:ame_ingot"
+        },
+        "S": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "amemod:ame_sword"
+    }
+}

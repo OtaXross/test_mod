@@ -1,0 +1,40 @@
+{
+    "parent": "minecraft:recipes/root",
+    "criteria": {
+        "has_ore": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "amemod:ame_block"
+                    }
+                ]
+            }
+        },
+        "has_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "amemod:ame_ingot"
+            }
+        },
+        "has_recipe_blasting": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "amemod:ame_ingot_blasting"
+            }
+        }
+    },
+    "rewards": {
+        "recipes": [
+            "amemod:ame_ingot",
+            "amemod:ame_ingot_blasting"
+        ]
+    },
+    "requirements": [
+        [
+            "has_ore",
+            "has_recipe",
+            "has_recipe_blasting"
+        ]
+    ]
+}

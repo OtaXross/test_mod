@@ -1,0 +1,19 @@
+{
+    "type": "crafting_shaped",
+    "pattern": [
+        "A",
+        "A",
+        "S"
+    ],
+    "key": {
+        "A": {
+            "item": "amemod:ame_ingot"
+        },
+        "S": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "amemod:ame_sword"
+    }
+}

@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "": { "model": "amemod:block/ame_block" }
+    }
+}

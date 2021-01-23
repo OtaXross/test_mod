@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+          "item": "iron_ingot"
+        },
+
+        {
+          "item": "gold_ingot"
+        }
+      ],
+      "result": {
+        "item": "amemod:ame_ingot",
+        "count": 3
+      }
+    }

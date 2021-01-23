@@ -1,0 +1,9 @@
+{
+    "type": "blasting",
+    "ingredient": {
+        "item": "amemod:ame_block"
+    },
+    "result": "amemod:ame_ingot",
+    "cookingtime": 50,
+    "experience": 500000
+}
